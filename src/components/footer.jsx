@@ -6,6 +6,7 @@ import emailIcon from "../assets/email.png";
 import logoIcon from '../assets/logo.svg'
 
 const Footer = () => {
+  const year = new Date()
   return (
     <footer className="footer_wrapper">
       <div className="container">
@@ -36,16 +37,16 @@ const Footer = () => {
               <div className="footer_socials">
                 <Link to={"/"} target="_blank" className="footer_social_media">
                   {/* <img src={faceBookIcon} alt="faceBookIcon" /> */}
-                  <i class="fa-brands fa-facebook-f"></i>
+                  <i className="fa-brands fa-facebook-f"></i>
                 </Link>
                 <Link to={"/"} target="_blank" className="footer_social_media">
-                  <i class="fa-brands fa-twitter"></i>
+                  <i className="fa-brands fa-twitter"></i>
                 </Link>
                 <Link to={"/"} target="_blank" className="footer_social_media">
-                  <i class="fa-brands fa-instagram"></i>
+                  <i className="fa-brands fa-instagram"></i>
                 </Link>
                 <Link to={"/"} target="_blank" className="footer_social_media">
-                  <i class="fa-brands fa-linkedin"></i>
+                  <i className="fa-brands fa-linkedin"></i>
                 </Link>
               </div>
             </ul>
@@ -141,7 +142,7 @@ const Footer = () => {
       <div className="container footer_bottom">
         <Link className="footer_bottom_logo"><img src={logoIcon} alt="site logo" /></Link>
         <div className="footer_bottom_titles">
-          <span className="footer_bottom_title">Copyright © 2021 CreativeLayers. All Right Reserved.</span>
+          <span className="footer_bottom_title">Copyright © {year.getFullYear()} CreativeLayers. All Right Reserved.</span>
         </div>
       </div>
     </footer>
