@@ -4,9 +4,11 @@ import logo from "../assets/logo.svg";
 import NavMenu from '../assets/NavMenu.png'
 import { useState } from "react";
 import Menu from "./menu";
+import {useNavigate} from 'react-router-dom'
 
 const Navbar = () => {
   const [menuIsOpen, setmenuIsOpen] = useState(false)
+  const navigate = useNavigate()
   return (
     <div className="navbar__wrapper">
       <div className="container navbar_container">
@@ -29,7 +31,7 @@ const Navbar = () => {
         </nav>
         <div className="navbar_buttons">
           <button className="navbar_login_btn">Login</button>
-          <button className="navbar_register_btn">Register</button>
+          <button className="navbar_register_btn" onClick={() => navigate('/register')}>Register</button>
         </div>
         {menuIsOpen && <Menu setmenuIsOpen={setmenuIsOpen}/>}
       </div>
