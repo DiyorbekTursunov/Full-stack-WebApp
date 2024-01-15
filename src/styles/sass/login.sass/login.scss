@@ -1,9 +1,9 @@
-.register_form_wrapper {
+.login_form_wrapper {
     width: 100%;
     display: flex;
     justify-content: center;
 
-    .register_form {
+    .login_form {
         margin-top: 64px;
         border-radius: 3px;
         border: 1px solid #E6E9EC;
@@ -14,7 +14,7 @@
         flex-shrink: 0;
         padding: 24px 30px;
 
-        .register_form_heading {
+        .login_form_heading {
             color: #0D263B;
             font-size: 24px;
             font-weight: 600;
@@ -22,17 +22,17 @@
             margin-bottom: 44px;
         }
 
-        .register_form_inputs {
+        .login_form_inputs {
             display: flex;
             gap: 44px;
             flex-direction: column;
             margin-bottom: 32px;
 
-            .register_form_label {
+            .login_form_label {
                 display: none;
             }
 
-            .register_form_input {
+            .login_form_input {
                 border: none;
                 border-bottom: 1px solid #E6E9EC;
                 padding: 5px 5px;
@@ -46,7 +46,7 @@
             }
         }
 
-        .register_form_btn {
+        .login_form_btn {
             border-radius: 2px;
             background: #0061DF;
             width: 100%;

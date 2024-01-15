@@ -30,7 +30,7 @@ const Navbar = () => {
           </ul>
         </nav>
         <div className="navbar_buttons">
-          <button className="navbar_login_btn">Login</button>
+          <button className="navbar_login_btn" onClick={() => navigate('/login')}>Login</button>
           <button className="navbar_register_btn" onClick={() => navigate('/register')}>Register</button>
         </div>
         {menuIsOpen && <Menu setmenuIsOpen={setmenuIsOpen}/>}
