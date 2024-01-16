@@ -5,21 +5,25 @@ import bg from "../assets/hero-bg.png";
 const listings = [
   {
     id: 1,
+    name: "Skyper Pool Partment",
     imageUrl: bg,
-    address: "123 Main St",
+    address: "112 Glenwood Ave Hyde Park, Boston, MA",
     price: "$500,000",
     beds: 3,
     baths: 2,
     sqFt: 1500,
+    garage: 3,
   },
   {
     id: 2,
+    name: "New Apartment Nice Wiew",
     imageUrl: bg,
     address: "34 London St",
     price: "$1,000,000",
     beds: 4,
     baths: 2,
     sqFt: 1500,
+    garage: 3,
   },
 ];
 
