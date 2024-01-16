@@ -5,6 +5,7 @@ import { Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { Link } from "react-router-dom";
 
 const Hero = ({ listings }) => {
   return (
@@ -98,7 +99,7 @@ const Hero = ({ listings }) => {
                       fill="white"
                     />
                   </svg>
-                  <p>{listing.garage}Garage</p>
+                  <p>{listing.garage} Garage</p>
                 </li>
                 <li>
                   <svg
@@ -128,9 +129,9 @@ const Hero = ({ listings }) => {
                 </li>
               </ul>
               <h4>{listing.price}/mo</h4>
-              <a className="hero-link" href="#">
+              <Link to="/" className="hero-link" href="#">
                 Read more
-              </a>
+              </Link>
             </div>
           </div>
         </SwiperSlide>

@@ -1,6 +1,7 @@
 import Hero from "../components/Hero";
 import "../styles/sass/home.sass/home.scss";
 import bg from "../assets/hero-bg.png";
+import Reacomended from "../components/Reacomended";
 
 const listings = [
   {
@@ -25,12 +26,46 @@ const listings = [
     sqFt: 1500,
     garage: 3,
   },
+  {
+    id: 3,
+    name: "New Apartment Nice Wiew",
+    imageUrl: bg,
+    address: "34 London St",
+    price: "$1,000,000",
+    beds: 4,
+    baths: 2,
+    sqFt: 1500,
+    garage: 3,
+  },
+  {
+    id: 4,
+    name: "New Apartment Nice Wiew",
+    imageUrl: bg,
+    address: "34 London St",
+    price: "$1,000,000",
+    beds: 4,
+    baths: 2,
+    sqFt: 1500,
+    garage: 3,
+  },
+  {
+    id: 5,
+    name: "New Apartment Nice Wiew",
+    imageUrl: bg,
+    address: "34 London St",
+    price: "$1,000,000",
+    beds: 4,
+    baths: 2,
+    sqFt: 1500,
+    garage: 3,
+  },
 ];
 
 const Home = () => {
   return (
     <div>
       <Hero listings={listings} />
+      <Reacomended products={listings} />
       <section>Izzatilla</section>
       <section>Izzatilla</section>
       <section>Dilmurod</section>
