@@ -263,26 +263,63 @@ const ProductView = () => {
               </div>
             </section>
             <hr />
-            <section>
-              <div>
-                <h2>Location</h2>
-                <ul>
-                  <li>
+            <section className="product_view_main_descr_location_wrapper">
+              <div className="product_view_main_descr_location">
+                <h2 className="product_view_main_descr_location_heading">
+                  Location
+                </h2>
+                <ul className="product_view_main_descr_location_ul">
+                  <li className="product_view_main_descr_location_li">
                     <span>Address:</span>329 Queensberry Street
                   </li>
-                  <li>
+                  <li className="product_view_main_descr_location_li">
                     <span>State/County:</span>Washington
                   </li>
-                  <li>
+                  <li className="product_view_main_descr_location_li">
                     <span>City:</span>Jersey City
                   </li>
-                  <li>
+                  <li className="product_view_main_descr_location_li">
                     <span>Country:</span>United States
                   </li>
                 </ul>
-                <GoogleMap/>
+                <GoogleMap />
               </div>
             </section>
+            <hr />
+            <section className="product_view_main_descr_details_wrapper">
+              <div className="product_view_main_descr_details">
+                <h2 className="product_view_main_descr_details_heading">
+                  Property Details
+                </h2>
+                <ul className="product_view_main_descr_details_ul">
+                  <li className="product_view_main_descr_details_li">
+                    <span>Property ID:</span>HZ27
+                  </li>
+                  <li className="product_view_main_descr_details_li">
+                    <span>Bedrooms:</span>8
+                  </li>
+                  <li className="product_view_main_descr_details_li">
+                    <span>Price:</span>$130.000
+                  </li>
+                  <li className="product_view_main_descr_details_li">
+                    <span>Bathrooms:</span>6
+                  </li>
+                  <li className="product_view_main_descr_details_li">
+                    <span>Property Size:</span>1560 Sq Ft
+                  </li>
+                  <li className="product_view_main_descr_details_li">
+                    <span>Garage:</span>4
+                  </li>
+                  <li className="product_view_main_descr_details_li">
+                    <span>Year Bulit:</span>2021-01-09
+                  </li>
+                  <li className="product_view_main_descr_details_li">
+                    <span>Garage size:</span>200 SqFt
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <hr />
           </main>
           <section className="contact_to_seller_section">
             <div className="contact_to_seller">

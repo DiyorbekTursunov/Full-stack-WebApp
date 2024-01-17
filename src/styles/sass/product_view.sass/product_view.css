@@ -210,11 +210,88 @@
 .product_view_container .product_view_descr .product_view_main_descrs .product_view_main_descr_about .product_view_main_description .product_view_main_description_btn {
   color: #0061DF;
   background-color: transparent;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
   text-decoration-line: underline;
+}
+.product_view_container .product_view_descr .product_view_main_descrs .product_view_main_descr_location_wrapper {
+  margin-top: 33px;
+}
+.product_view_container .product_view_descr .product_view_main_descrs .product_view_main_descr_location_wrapper .product_view_main_descr_location .product_view_main_descr_location_heading {
+  color: #0D263B;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+.product_view_container .product_view_descr .product_view_main_descrs .product_view_main_descr_location_wrapper .product_view_main_descr_location .product_view_main_descr_location_ul {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+.product_view_container .product_view_descr .product_view_main_descrs .product_view_main_descr_location_wrapper .product_view_main_descr_location .product_view_main_descr_location_ul .product_view_main_descr_location_li {
+  display: flex;
+  gap: 8px;
+  color: #696969;
+}
+.product_view_container .product_view_descr .product_view_main_descrs .product_view_main_descr_location_wrapper .product_view_main_descr_location .product_view_main_descr_location_ul .product_view_main_descr_location_li span {
+  color: #0D263B;
+  font-weight: 600px;
+}
+@media only screen and (max-width: 450px) {
+  .product_view_container .product_view_descr .product_view_main_descrs .product_view_main_descr_location_wrapper .product_view_main_descr_location .product_view_main_descr_location_ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .product_view_container .product_view_descr .product_view_main_descrs .product_view_main_descr_location_wrapper .product_view_main_descr_location .product_view_main_descr_location_ul {
+    gap: 0;
+  }
+  .product_view_container .product_view_descr .product_view_main_descrs .product_view_main_descr_location_wrapper .product_view_main_descr_location .product_view_main_descr_location_ul .product_view_main_descr_location_li {
+    margin-bottom: 15px;
+  }
+}
+.product_view_container .product_view_descr .product_view_main_descrs .product_view_main_descr_details_wrapper {
+  margin-top: 33px;
+}
+.product_view_container .product_view_descr .product_view_main_descrs .product_view_main_descr_details_wrapper .product_view_main_descr_details .product_view_main_descr_details_heading {
+  color: #0D263B;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+.product_view_container .product_view_descr .product_view_main_descrs .product_view_main_descr_details_wrapper .product_view_main_descr_details .product_view_main_descr_details_ul {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 24px;
+  margin-bottom: 28px;
+  width: 100%;
+}
+.product_view_container .product_view_descr .product_view_main_descrs .product_view_main_descr_details_wrapper .product_view_main_descr_details .product_view_main_descr_details_ul .product_view_main_descr_details_li {
+  display: flex;
+  gap: 8px;
+  color: #696969;
+}
+.product_view_container .product_view_descr .product_view_main_descrs .product_view_main_descr_details_wrapper .product_view_main_descr_details .product_view_main_descr_details_ul .product_view_main_descr_details_li span {
+  color: #0D263B;
+  font-weight: 600px;
+}
+@media only screen and (max-width: 450px) {
+  .product_view_container .product_view_descr .product_view_main_descrs .product_view_main_descr_details_wrapper .product_view_main_descr_details .product_view_main_descr_details_ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .product_view_container .product_view_descr .product_view_main_descrs .product_view_main_descr_details_wrapper .product_view_main_descr_details .product_view_main_descr_details_ul {
+    gap: 0;
+  }
+  .product_view_container .product_view_descr .product_view_main_descrs .product_view_main_descr_details_wrapper .product_view_main_descr_details .product_view_main_descr_details_ul .product_view_main_descr_details_li {
+    margin-bottom: 15px;
+  }
 }
 @media only screen and (max-width: 780px) {
   .product_view_container .product_view_descr .product_view_main_descrs {
