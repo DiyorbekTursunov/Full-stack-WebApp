@@ -12,8 +12,16 @@ import product_view_img_4 from "../assets/product_view_img_4.jpg";
 import product_view_img_5 from "../assets/product_view_img_5.jpg";
 
 import user_icon from "../assets/user_icon.png";
+import { useState } from "react";
+import GoogleMap from "../components/map";
 
 const ProductView = () => {
+  const [isShowMore, setisShowMore] = useState(false);
+  const Description = `Occupying over 8,000 square feet, perched over 1,100 feet in the air with absolutely breathtaking panoramic 360-degree views of all of New York City and the surrounding tri-state area, The 82nd Floor at 432 Park Avenue has been completely reimagined by one of the most sought-after design houses in London and represents an utterly unique opportunity to own a globally significant property.
+
+  The residence is comprised of 5 bedrooms, 2 master bathrooms, 4 on-suite guest bathrooms, 2 powder rooms, 2 offices, 2 dressing rooms a media room, an oversized eat-in gourmet chef's kitchen, and a sprawling 1,100 square-foot Great Room perfectly situated in the prime southwest corner of the floor
+
+  `;
   return (
     <div className="product_view_wrapper">
       <div className="container product_view_container">
@@ -68,7 +76,7 @@ const ProductView = () => {
                         viewBox="0 0 14 14"
                         fill="none"
                       >
-                        <g clip-path="url(#clip0_543_3192)">
+                        <g clipPath="url(#clip0_543_3192)">
                           <path
                             d="M11.1016 9.07812C10.2912 9.07812 9.57116 9.47193 9.12248 10.0781L5.25962 8.10403C5.32443 7.88386 5.35938 7.65103 5.35938 7.41016C5.35938 7.08392 5.29542 6.77239 5.17962 6.48722L9.22813 4.05478C9.67985 4.58497 10.3521 4.92188 11.1016 4.92188C12.4585 4.92188 13.5625 3.8179 13.5625 2.46094C13.5625 1.10398 12.4585 0 11.1016 0C9.7446 0 8.64062 1.10398 8.64062 2.46094C8.64062 2.77457 8.69971 3.07461 8.80715 3.3507L4.74852 5.78922C4.29713 5.27466 3.63511 4.94922 2.89844 4.94922C1.54148 4.94922 0.4375 6.0532 0.4375 7.41016C0.4375 8.76712 1.54148 9.87109 2.89844 9.87109C3.72209 9.87109 4.45244 9.46433 4.89937 8.84116L8.75101 10.8095C8.67929 11.0401 8.64062 11.2851 8.64062 11.5391C8.64062 12.896 9.7446 14 11.1016 14C12.4585 14 13.5625 12.896 13.5625 11.5391C13.5625 10.1821 12.4585 9.07812 11.1016 9.07812ZM11.1016 0.820312C12.0062 0.820312 12.7422 1.5563 12.7422 2.46094C12.7422 3.36558 12.0062 4.10156 11.1016 4.10156C10.1969 4.10156 9.46094 3.36558 9.46094 2.46094C9.46094 1.5563 10.1969 0.820312 11.1016 0.820312ZM2.89844 9.05078C1.9938 9.05078 1.25781 8.3148 1.25781 7.41016C1.25781 6.50552 1.9938 5.76953 2.89844 5.76953C3.80308 5.76953 4.53906 6.50552 4.53906 7.41016C4.53906 8.3148 3.80308 9.05078 2.89844 9.05078ZM11.1016 13.1797C10.1969 13.1797 9.46094 12.4437 9.46094 11.5391C9.46094 10.6344 10.1969 9.89844 11.1016 9.89844C12.0062 9.89844 12.7422 10.6344 12.7422 11.5391C12.7422 12.4437 12.0062 13.1797 11.1016 13.1797Z"
                             fill="#696969"
@@ -102,9 +110,9 @@ const ProductView = () => {
                   </div>
                 </div>
               </div>
-              <div>
-                <div>
-                  <div>
+              <div className="product_view_main_price_wrapper">
+                <div className="product_view_main_price">
+                  <div className="product_view_main_price_icons">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="19"
@@ -119,7 +127,7 @@ const ProductView = () => {
                     </svg>
                     <span>4 Beds</span>
                   </div>
-                  <div>
+                  <div className="product_view_main_price_icons">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="19"
@@ -127,7 +135,7 @@ const ProductView = () => {
                       viewBox="0 0 19 19"
                       fill="none"
                     >
-                      <g clip-path="url(#clip0_532_3711)">
+                      <g clipPath="url(#clip0_532_3711)">
                         <path
                           d="M18.7622 11.0558C18.7622 10.7426 18.5082 10.4886 18.195 10.4886H17.0597V2.75501C17.0597 1.23589 15.8238 0 14.3047 0C12.7856 0 11.5497 1.23589 11.5497 2.75501V3.78902C11.5497 4.10226 11.8037 4.35624 12.1169 4.35624C12.4301 4.35624 12.6841 4.10226 12.6841 3.78902V2.75501C12.6841 1.86141 13.4111 1.13444 14.3047 1.13444C15.1983 1.13444 15.9253 1.86141 15.9253 2.75501V10.4886H0.805499C0.492258 10.4886 0.238281 10.7426 0.238281 11.0558C0.238281 13.6158 1.8574 15.8044 4.12527 16.6522C3.68901 17.1108 3.41919 17.7397 3.41919 18.4328C3.41919 18.746 3.67317 19 3.98641 19C4.29965 19 4.55363 18.746 4.55363 18.4328C4.55363 17.6583 5.1446 17.0282 5.87105 17.0282C5.89773 17.0282 13.1028 17.0282 13.1294 17.0282C13.8559 17.0282 14.4469 17.6583 14.4469 18.4328C14.4469 18.746 14.7009 19 15.0141 19C15.3274 19 15.5813 18.746 15.5813 18.4328C15.5813 17.7397 15.3115 17.1108 14.8753 16.6522C17.1431 15.8044 18.7622 13.6158 18.7622 11.0558ZM12.7898 15.8938H6.21068C3.73481 15.8938 1.68741 14.0245 1.40578 11.6231H17.5947C17.3131 14.0245 15.2656 15.8938 12.7898 15.8938Z"
                           fill="#696969"
@@ -149,7 +157,7 @@ const ProductView = () => {
                     </svg>
                     <span>5 Baths</span>
                   </div>
-                  <div>
+                  <div className="product_view_main_price_icons">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="19"
@@ -180,7 +188,7 @@ const ProductView = () => {
                     </svg>
                     <span>1 Garage</span>
                   </div>
-                  <div>
+                  <div className="product_view_main_price_icons">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="17"
@@ -188,7 +196,7 @@ const ProductView = () => {
                       viewBox="0 0 17 17"
                       fill="none"
                     >
-                      <g clip-path="url(#clip0_532_3737)">
+                      <g clipPath="url(#clip0_532_3737)">
                         <path
                           d="M16.149 0.146667L0.147593 16.1481C-0.165849 16.4616 0.0565081 17 0.500424 17H16.5019C16.7775 17 17.0009 16.7766 17.0009 16.501V0.499531C17.0009 0.0562469 16.463 -0.167208 16.149 0.146667ZM16.0029 16.002H1.70516L4.243 13.4641L4.93808 14.1592C5.03552 14.2567 5.16323 14.3054 5.29091 14.3054C5.7315 14.3054 5.95902 13.7688 5.64374 13.4535L4.94866 12.7584L6.37206 11.335L7.06714 12.0301C7.16458 12.1276 7.29229 12.1763 7.41997 12.1763C7.86056 12.1763 8.08807 11.6397 7.7728 11.3244L7.07775 10.6294L8.50115 9.20596L9.19623 9.90104C9.29367 9.99848 9.42138 10.0472 9.54906 10.0472C9.98965 10.0472 10.2172 9.51058 9.90189 9.19531L9.20684 8.50026L10.6302 7.07686L11.3253 7.77195C11.4228 7.86939 11.5505 7.91809 11.6782 7.91809C12.1187 7.91809 12.3463 7.38149 12.031 7.06622L11.3359 6.37117L12.7593 4.94777L13.4544 5.64285C13.5519 5.74029 13.6796 5.789 13.8072 5.789C14.2478 5.789 14.4753 5.2524 14.1601 4.93713L13.465 4.24208L16.0029 1.70423V16.002H16.0029Z"
                           fill="#696969"
@@ -206,7 +214,7 @@ const ProductView = () => {
                     </svg>
                     <span>1200 Sq Ft</span>
                   </div>
-                  <div>
+                  <div className="product_view_main_price_icons">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="19"
@@ -214,7 +222,7 @@ const ProductView = () => {
                       viewBox="0 0 19 19"
                       fill="none"
                     >
-                      <g clip-path="url(#clip0_532_3741)">
+                      <g clipPath="url(#clip0_532_3741)">
                         <path
                           d="M16.5508 1.48438H14.8438V0.59375C14.8438 0.265852 14.5779 0 14.25 0C13.9221 0 13.6562 0.265852 13.6562 0.59375V1.48438H5.34375V0.59375C5.34375 0.265852 5.07794 0 4.75 0C4.42206 0 4.15625 0.265852 4.15625 0.59375V1.48438H2.44922C1.0987 1.48438 0 2.58307 0 3.93359V16.5508C0 17.9013 1.0987 19 2.44922 19H16.5508C17.9013 19 19 17.9013 19 16.5508V3.93359C19 2.58307 17.9013 1.48438 16.5508 1.48438ZM2.44922 2.67188H4.15625V3.26562C4.15625 3.59352 4.42206 3.85938 4.75 3.85938C5.07794 3.85938 5.34375 3.59352 5.34375 3.26562V2.67188H13.6562V3.26562C13.6562 3.59352 13.9221 3.85938 14.25 3.85938C14.5779 3.85938 14.8438 3.59352 14.8438 3.26562V2.67188H16.5508C17.2465 2.67188 17.8125 3.23787 17.8125 3.93359V5.34375H1.1875V3.93359C1.1875 3.23787 1.75349 2.67188 2.44922 2.67188ZM16.5508 17.8125H2.44922C1.75349 17.8125 1.1875 17.2465 1.1875 16.5508V6.53125H17.8125V16.5508C17.8125 17.2465 17.2465 17.8125 16.5508 17.8125Z"
                           fill="#696969"
@@ -229,15 +237,89 @@ const ProductView = () => {
                     <span>Year Built: 1800</span>
                   </div>
                 </div>
-                <div>
-                  <div>
+                <div className="product_view_main_price_title">
+                  <div className="product_view_main_price_title_heading">
                     <del>$2,800/mo</del>
                     <h2>$7,500/mo</h2>
                   </div>
-                  <p>Est. Mortgage</p>
+                  <p className="product_view_main_price_title_paragraph">
+                    Est. Mortgage
+                  </p>
                 </div>
               </div>
+              <div className="product_view_main_description">
+                <h2 className="product_view_main_description_heading">
+                  Description
+                </h2>
+                <p className="product_view_main_description_paragraph">
+                  {Description.slice(0, isShowMore ? 2000 : 300)}
+                </p>
+                <button
+                  onClick={() => setisShowMore(!isShowMore)}
+                  className="product_view_main_description_btn"
+                >
+                  Show more
+                </button>
+              </div>
             </section>
+            <hr />
+            <section className="product_view_main_descr_location_wrapper">
+              <div className="product_view_main_descr_location">
+                <h2 className="product_view_main_descr_location_heading">
+                  Location
+                </h2>
+                <ul className="product_view_main_descr_location_ul">
+                  <li className="product_view_main_descr_location_li">
+                    <span>Address:</span>329 Queensberry Street
+                  </li>
+                  <li className="product_view_main_descr_location_li">
+                    <span>State/County:</span>Washington
+                  </li>
+                  <li className="product_view_main_descr_location_li">
+                    <span>City:</span>Jersey City
+                  </li>
+                  <li className="product_view_main_descr_location_li">
+                    <span>Country:</span>United States
+                  </li>
+                </ul>
+                <GoogleMap />
+              </div>
+            </section>
+            <hr />
+            <section className="product_view_main_descr_details_wrapper">
+              <div className="product_view_main_descr_details">
+                <h2 className="product_view_main_descr_details_heading">
+                  Property Details
+                </h2>
+                <ul className="product_view_main_descr_details_ul">
+                  <li className="product_view_main_descr_details_li">
+                    <span>Property ID:</span>HZ27
+                  </li>
+                  <li className="product_view_main_descr_details_li">
+                    <span>Bedrooms:</span>8
+                  </li>
+                  <li className="product_view_main_descr_details_li">
+                    <span>Price:</span>$130.000
+                  </li>
+                  <li className="product_view_main_descr_details_li">
+                    <span>Bathrooms:</span>6
+                  </li>
+                  <li className="product_view_main_descr_details_li">
+                    <span>Property Size:</span>1560 Sq Ft
+                  </li>
+                  <li className="product_view_main_descr_details_li">
+                    <span>Garage:</span>4
+                  </li>
+                  <li className="product_view_main_descr_details_li">
+                    <span>Year Bulit:</span>2021-01-09
+                  </li>
+                  <li className="product_view_main_descr_details_li">
+                    <span>Garage size:</span>200 SqFt
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <hr />
           </main>
           <section className="contact_to_seller_section">
             <div className="contact_to_seller">
@@ -317,8 +399,7 @@ const ProductView = () => {
                   <textarea
                     className="contact_to_seller_form_textarea"
                     required
-                    name=""
-                    id=""
+                    id="Message"
                     cols="30"
                     rows="5"
                     width="232px"
