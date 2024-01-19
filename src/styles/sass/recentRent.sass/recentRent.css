@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.recent-rent {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  height: 750px;
+  padding-top: 80px;
+}
+
+.text h1 {
+  color: var(--text-1, #0D263B);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: -0.56px;
+}
+
+.text h2 {
+  color: var(--text-2, #696969);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: -0.56px;
+}
+
+.contener {
+  width: 380px;
+  height: 429px;
+  border-radius: 3px;
+  border: 1px solid var(--Border-Color, #E6E9EC);
+  background: var(--Color-5, #FFF);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: transform 0.3s linear;
+}
+
+.contener:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+.imges1 {
+  background-image: url("../../../assets/houseImages1.png");
+  width: 379px;
+  height: 220px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.imges1 .btn1 {
+  padding: 5px 12px;
+  align-items: flex-start;
+  border-radius: 3px;
+  color: white;
+  background: var(--Color-1, #0061DF);
+  margin: 20px;
+}
+
+.imges1 .btn2 {
+  padding: 5px 12px;
+  align-items: flex-start;
+  border-radius: 3px;
+  color: white;
+  background: var(--Color-2, #0D263B);
+  margin-left: 125px;
+}
+
+.imges1 img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid 2px white;
+  margin-top: 125px;
+  margin-left: 300px;
+}
+
+.icons-top-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.icons-top-text h1 {
+  color: var(--Color-2, #0D263B);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.icons-top-text h2 {
+  color: var(--Text-Color, #696969);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.icons-top-text .icons {
+  display: flex;
+  gap: 35px;
+  justify-content: space-around;
+}
+
+.icons-top-text .icons .icons-chald {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icons-top-text .icons .icons-chald h1 {
+  color: var(--Text-Color, #696969);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.contener-bottom {
+  display: flex;
+  gap: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contener-bottom h1 {
+  color: var(--Text-Color, #696969);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration-line: line-through;
+}
+
+.contener-bottom h2 {
+  color: var(--Color-2, #0D263B);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.contener-bottom .contener-bottom-icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.images-houses {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.images-houses .btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+}
+
+.imges2 {
+  background-image: url("../../../assets/houseImages2.png");
+  width: 379px;
+  height: 220px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.imges2 .btn1 {
+  padding: 5px 12px;
+  align-items: flex-start;
+  border-radius: 3px;
+  color: white;
+  background: var(--Color-1, #0061DF);
+  margin: 20px;
+}
+
+.imges2 .btn2 {
+  padding: 5px 12px;
+  align-items: flex-start;
+  border-radius: 3px;
+  color: white;
+  background: var(--Color-2, #0D263B);
+  margin-left: 125px;
+}
+
+.imges2 img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid 2px white;
+  margin-top: 125px;
+  margin-left: 300px;
+}
+
+.imges3 {
+  background-image: url("../../../assets/houseImages3.png");
+  width: 379px;
+  height: 220px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.imges3 .btn1 {
+  padding: 5px 12px;
+  align-items: flex-start;
+  border-radius: 3px;
+  color: white;
+  background: var(--Color-1, #0061DF);
+  margin: 20px;
+}
+
+.imges3 .btn2 {
+  padding: 5px 12px;
+  align-items: flex-start;
+  border-radius: 3px;
+  color: white;
+  background: var(--Color-2, #0D263B);
+  margin-left: 125px;
+}
+
+.imges3 img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid 2px white;
+  margin-top: 125px;
+  margin-left: 300px;
+}
+
+.bullet {
+  width: 100px;
+  height: 12px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.testimonials {
+  height: 482px;
+  background-color: var(--bg-2, #F5F7FC);
+  text-align: center;
+}
+
+.testimonials-comments {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.testimonials .testimonials-text {
+  padding-top: 48px;
+}
+
+.testimonials .testimonials-text h1 {
+  color: var(--text-1, #0D263B);
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: -0.56px;
+}
+
+.testimonials .testimonials-text h2 {
+  color: var(--text-2, #696969);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.testimonials .comment-text {
+  width: 380px;
+  height: 197px;
+  padding: 40px 40px;
+  border-radius: 3px;
+  background: var(--Color-5, #FFF);
+  /* Box - Shadow */
+  box-shadow: 0px 10px 50px 0px rgba(13, 38, 59, 0.1);
+}
+
+.testimonials .comment-text h1 {
+  color: var(--Text-Color, #696969);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.testimonials .comment-text img {
+  margin-top: 65px;
+}
+
+.testimonials .comment-text h3 {
+  color: var(--Color-2, #0D263B);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.testimonials .comment-text h4 {
+  color: var(--Text-Color, #696969);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.testimonials .btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+}
