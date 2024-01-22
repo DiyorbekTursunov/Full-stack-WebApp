@@ -23,9 +23,6 @@ import "../styles/sass/home.sass/home.scss";
 const Home = () => {
   return (
     <div>
-      <div>
-      <section></section> {/* Izzatilla */}
-      <section></section> {/* Izzatilla */}
       <section className="who-chose">
         <div className="container">
           <h2 className="who-chose__title home-title">Why Choose Us?</h2>
@@ -86,6 +83,7 @@ const Home = () => {
             Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.
             </div>
         </div>
+        </section>
       <section className='recent-rent'>
         <button className='btn'><img src={liftArrow} alt="" /></button>
         <div className='contener'>
@@ -270,6 +268,7 @@ const Home = () => {
         </div>
         <button className='btn'><img src={rightArrow} alt="" /></button>
       </section>
+    </div>
 )};
 
 
