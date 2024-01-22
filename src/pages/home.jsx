@@ -12,7 +12,6 @@ import resizIcons from '../assets/resize.png'
 import heartIcons from '../assets/heart.png'
 import rectangle from '../assets/Rectangle.png'
 import rightArrow from '../assets/right-arrow.svg'
-import bullet from '../assets/bullet.png'
 
 
 
@@ -25,177 +24,188 @@ const Home = () => {
       <section>Dilmurod</section>
       <section>Dilmurod</section>
       <section className='recent-rent'>
-        {/*  test yozilgan div*/}
-        <div className='text'>
-          <h1>Recent Properties for Rent</h1>
-          <h2>Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.</h2>
+        <button className='btn'><img src={liftArrow} alt="" /></button>
+        <div className='contener'>
+          {/*  test yozilgan div*/}
+          <div className='text'>
+            <h1>Recommended</h1>
+            <h2>Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.</h2>
+            <h3>112 Glenwood Ave Hyde Park, Boston, MA</h3>
+          </div>
+          {/* rasimlar joylashgan div */}
+          <div className='images-houses'>
+            <div className='card-contener'>
+              {/* rasisim ustida 2 btn bor qismi */}
+              <div className='imges1'>
+                <button className='btn1'>FEATURED</button>
+                <button className='btn2'>FOR SALE</button>
+                <img src={ellipse1} alt="" />
+              </div>
+              {/* ikonkalar joylashgan qismi */}
+              <div className='icons-top-text'>
+                <h1>New Apartment Nice Wiew</h1>
+                <h2>Quincy St, Brooklyn, NY, USA</h2>
+                <div className='icons'>
+                  <div className='icons-chald'>
+                    <img src={bedIcons} alt="" />
+                    <h1>4 Beds</h1>
+                  </div>
+                  <div className='icons-chald'>
+                    <img src={bathIcons} alt="" />
+                    <h1>5 Baths</h1>
+                  </div>
+                  <div className='icons-chald'>
+                    <img src={carIcons} alt="" />
+                    <h1>1 Garage</h1>
+                  </div>
+                  <div className='icons-chald'>
+                    <img src={rulerIcons} alt="" />
+                    <h1>1200 Sq Ft</h1>
+                  </div>
+
+                </div>
+              </div>
+              <img src={rectangle} alt="" />
+              {/* narx va yurakcha bor qismi */}
+              <div className='contener-bottom'>
+                <div >
+                  <h1>$2,800/mo</h1>
+                  <h2>$7,500/mo</h2>
+                </div>
+                <div className='contener-bottom-icons'>
+                  <button><img src={resizIcons} alt="" /></button>
+                  <button><img src={heartIcons} alt="" /></button>
+                </div>
+              </div>
+            </div>
+            <div className='card-contener'>
+              {/* rasisim ustida 2 btn bor qismi */}
+              <div className='imges2'>
+                <button className='btn1'>FEATURED</button>
+                <button className='btn2'>FOR SALE</button>
+                <img src={ellipse2} alt="" />
+              </div>
+              {/* ikonkalar joylashgan qismi */}
+              <div className='icons-top-text'>
+                <h1>New Apartment Nice Wiew</h1>
+                <h2>Quincy St, Brooklyn, NY, USA</h2>
+                <div className='icons'>
+                  <div className='icons-chald'>
+                    <img src={bedIcons} alt="" />
+                    <h1>4 Beds</h1>
+                  </div>
+                  <div className='icons-chald'>
+                    <img src={bathIcons} alt="" />
+                    <h1>5 Baths</h1>
+                  </div>
+                  <div className='icons-chald'>
+                    <img src={carIcons} alt="" />
+                    <h1>1 Garage</h1>
+                  </div>
+                  <div className='icons-chald'>
+                    <img src={rulerIcons} alt="" />
+                    <h1>1200 Sq Ft</h1>
+                  </div>
+
+                </div>
+              </div>
+              <img src={rectangle} alt="" />
+              {/* narx va yurakcha bor qismi */}
+              <div className='contener-bottom'>
+                <div >
+                  <h1>$2,800/mo</h1>
+                  <h2>$7,500/mo</h2>
+                </div>
+                <div className='contener-bottom-icons'>
+                  <button><img src={resizIcons} alt="" /></button>
+                  <button><img src={heartIcons} alt="" /></button>
+                </div>
+              </div>
+            </div>
+            <div className='card-contener'>
+              {/* rasimni ustida 2 btn bor qismi */}
+              <div className='imges3'>
+                <button className='btn1'>FEATURED</button>
+                <button className='btn2'>FOR SALE</button>
+                <img src={ellipse3} alt="" />
+              </div>
+              {/* ikonkalar joylashgan qismi */}
+              <div className='icons-top-text'>
+                <h1>New Apartment Nice Wiew</h1>
+                <h2>Quincy St, Brooklyn, NY, USA</h2>
+                <div className='icons'>
+                  <div className='icons-chald'>
+                    <img src={bedIcons} alt="" />
+                    <h1>4 Beds</h1>
+                  </div>
+                  <div className='icons-chald'>
+                    <img src={bathIcons} alt="" />
+                    <h1>5 Baths</h1>
+                  </div>
+                  <div className='icons-chald'>
+                    <img src={carIcons} alt="" />
+                    <h1>1 Garage</h1>
+                  </div>
+                  <div className='icons-chald'>
+                    <img src={rulerIcons} alt="" />
+                    <h1>1200 Sq Ft</h1>
+                  </div>
+
+                </div>
+              </div>
+              <img src={rectangle} alt="" />
+              {/* narx va yurakcha bor qismi */}
+              <div className='contener-bottom'>
+                <div >
+                  <h1>$2,800/mo</h1>
+                  <h2>$7,500/mo</h2>
+                </div>
+                <div className='contener-bottom-icons'>
+                  <button><img src={resizIcons} alt="" /></button>
+                  <button><img src={heartIcons} alt="" /></button>
+                </div>
+              </div>
+            </div>
+            <button className='show-more-btn'>Show more</button>
+          </div>
+
         </div>
-        {/* rasimlar joylashgan div */}
-        <div className='images-houses'>
-          <button className='btn'><img src={liftArrow} alt="" /></button>
-          <div className='contener'>
-            {/* rasisim ustida 2 btn bor qismi */}
-            <div className='imges1'>
-              <button className='btn1'>FEATURED</button>
-              <button className='btn2'>FOR SALE</button>
-              <img src={ellipse1} alt="" />
-            </div>
-            {/* ikonkalar joylashgan qismi */}
-            <div className='icons-top-text'>
-              <h1>New Apartment Nice Wiew</h1>
-              <h2>Quincy St, Brooklyn, NY, USA</h2>
-              <div className='icons'>
-                <div className='icons-chald'>
-                  <img src={bedIcons} alt="" />
-                  <h1>4 Beds</h1>
-                </div>
-                <div className='icons-chald'>
-                  <img src={bathIcons} alt="" />
-                  <h1>5 Baths</h1>
-                </div>
-                <div className='icons-chald'>
-                  <img src={carIcons} alt="" />
-                  <h1>1 Garage</h1>
-                </div>
-                <div className='icons-chald'>
-                  <img src={rulerIcons} alt="" />
-                  <h1>1200 Sq Ft</h1>
-                </div>
-
-              </div>
-            </div>
-            <img src={rectangle} alt="" />
-            {/* narx va yurakcha bor qismi */}
-            <div className='contener-bottom'>
-              <div >
-                <h1>$2,800/mo</h1>
-                <h2>$7,500/mo</h2>
-              </div>
-              <div className='contener-bottom-icons'>
-                <img src={resizIcons} alt="" />
-                <img src={heartIcons} alt="" />
-              </div>
-            </div>
-          </div>
-          <div className='contener'>
-            {/* rasisim ustida 2 btn bor qismi */}
-            <div className='imges2'>
-              <button className='btn1'>FEATURED</button>
-              <button className='btn2'>FOR SALE</button>
-              <img src={ellipse2} alt="" />
-            </div>
-            {/* ikonkalar joylashgan qismi */}
-            <div className='icons-top-text'>
-              <h1>New Apartment Nice Wiew</h1>
-              <h2>Quincy St, Brooklyn, NY, USA</h2>
-              <div className='icons'>
-                <div className='icons-chald'>
-                  <img src={bedIcons} alt="" />
-                  <h1>4 Beds</h1>
-                </div>
-                <div className='icons-chald'>
-                  <img src={bathIcons} alt="" />
-                  <h1>5 Baths</h1>
-                </div>
-                <div className='icons-chald'>
-                  <img src={carIcons} alt="" />
-                  <h1>1 Garage</h1>
-                </div>
-                <div className='icons-chald'>
-                  <img src={rulerIcons} alt="" />
-                  <h1>1200 Sq Ft</h1>
-                </div>
-
-              </div>
-            </div>
-            <img src={rectangle} alt="" />
-            {/* narx va yurakcha bor qismi */}
-            <div className='contener-bottom'>
-              <div >
-                <h1>$2,800/mo</h1>
-                <h2>$7,500/mo</h2>
-              </div>
-              <div className='contener-bottom-icons'>
-                <img src={resizIcons} alt="" />
-                <img src={heartIcons} alt="" />
-              </div>
-            </div>
-          </div>
-          <div className='contener'>
-            {/* rasisim ustida 2 btn bor qismi */}
-            <div className='imges3'>
-              <button className='btn1'>FEATURED</button>
-              <button className='btn2'>FOR SALE</button>
-              <img src={ellipse3} alt="" />
-            </div>
-            {/* ikonkalar joylashgan qismi */}
-            <div className='icons-top-text'>
-              <h1>New Apartment Nice Wiew</h1>
-              <h2>Quincy St, Brooklyn, NY, USA</h2>
-              <div className='icons'>
-                <div className='icons-chald'>
-                  <img src={bedIcons} alt="" />
-                  <h1>4 Beds</h1>
-                </div>
-                <div className='icons-chald'>
-                  <img src={bathIcons} alt="" />
-                  <h1>5 Baths</h1>
-                </div>
-                <div className='icons-chald'>
-                  <img src={carIcons} alt="" />
-                  <h1>1 Garage</h1>
-                </div>
-                <div className='icons-chald'>
-                  <img src={rulerIcons} alt="" />
-                  <h1>1200 Sq Ft</h1>
-                </div>
-
-              </div>
-            </div>
-            <img src={rectangle} alt="" />
-            {/* narx va yurakcha bor qismi */}
-            <div className='contener-bottom'>
-              <div >
-                <h1>$2,800/mo</h1>
-                <h2>$7,500/mo</h2>
-              </div>
-              <div className='contener-bottom-icons'>
-                <img src={resizIcons} alt="" />
-                <img src={heartIcons} alt="" />
-              </div>
-            </div>
-          </div>
-          <button className='btn'><img src={rightArrow} alt="" /></button>
-        </div>
-        <img className='bullet' src={bullet} alt="" />
+        <button className='btn'><img src={rightArrow} alt="" /></button>
       </section>
       <section className='testimonials'>
-        <div className='testimonials-text'>
-          <h1>Testimonials</h1>
-          <h2>Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.</h2>
-        </div>
-        <div className='testimonials-comments'>
         <button className='btn'><img src={liftArrow} alt="" /></button>
-          <div className='comment-text'>
-            <h1>“ I believe in lifelong learning and Skola is a great place to learn from experts. I've learned a lot and recommend it to all my friends “</h1>
-            <img src={ellipse3} alt="" />
-            <h3>Marvin McKinney</h3>
-            <h4>Designer</h4>
+        <div className='contener'>
+          <div className='testimonials-text'>
+            <h1>Testimonials</h1>
+            <h2>Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.</h2>
+            <h3>112 Glenwood Ave Hyde Park, Boston, MA</h3>
           </div>
-          <div className='comment-text'>
-            <h1>“ I believe in lifelong learning and Skola is a great place to learn from experts. I've learned a lot and recommend it to all my friends “</h1>
-            <img src={ellipse3} alt="" />
-            <h3>Marvin McKinney</h3>
-            <h4>Designer</h4>
+          <div className='testimonials-comments'>
+            <div className='comment-text comment'>
+              <h1>“ I believe in lifelong learning and Skola is a great place to learn from experts. I've learned a lot and recommend it to all my friends “</h1>
+              <img src={ellipse3} alt="" />
+              <h3>Marvin McKinney</h3>
+              <h4>Designer</h4>
+            </div>
+            <div className='comment-text'>
+              <h1>“ I believe in lifelong learning and Skola is a great place to learn from experts. I've learned a lot and recommend it to all my friends “</h1>
+              <img src={ellipse3} alt="" />
+              <h3>Marvin McKinney</h3>
+              <h4>Designer</h4>
+            </div>
+            <div className='comment-text'>
+              <h1>“ I believe in lifelong learning and Skola is a great place to learn from experts. I've learned a lot and recommend it to all my friends “</h1>
+              <img src={ellipse3} alt="" />
+              <h3>Marvin McKinney</h3>
+              <h4>Designer</h4>
+            </div>
           </div>
-          <div className='comment-text'>
-            <h1>“ I believe in lifelong learning and Skola is a great place to learn from experts. I've learned a lot and recommend it to all my friends “</h1>
-            <img src={ellipse3} alt="" />
-            <h3>Marvin McKinney</h3>
-            <h4>Designer</h4>
+          <div className='responsive-bottm-btn'>
+          <button className='responsive-bottm-btn1'><img src={liftArrow} alt="" /></button>
+          <button className='responsive-bottm-btn2'><img src={rightArrow} alt="" /></button>
           </div>
-        <button className='btn'><img src={rightArrow} alt="" /></button>
         </div>
+        <button className='btn'><img src={rightArrow} alt="" /></button>
       </section>
     </div>
   )
